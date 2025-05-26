@@ -8,7 +8,7 @@ import Article from './Article'
 describe('Article', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<Article />)
+      render(<Article article={{body: "", createdAt: 0, id: 100, title: "Oi"}} />)
     }).not.toThrow()
   })
 })
