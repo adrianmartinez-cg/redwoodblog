@@ -19499,6 +19499,8 @@ __metadata:
     "@redwoodjs/core": "npm:8.6.1"
     "@redwoodjs/project-config": "npm:8.6.1"
     prettier-plugin-tailwindcss: "npm:^0.5.12"
+    storybook-framework-redwoodjs-vite: "npm:^8.6.1"
+    vite-plugin-node-polyfills: "npm:^0.23.0"
   languageName: unknown
   linkType: soft
 
@@ -20224,7 +20226,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook-framework-redwoodjs-vite@npm:8.6.1":
+"storybook-framework-redwoodjs-vite@npm:8.6.1, storybook-framework-redwoodjs-vite@npm:^8.6.1":
   version: 8.6.1
   resolution: "storybook-framework-redwoodjs-vite@npm:8.6.1"
   dependencies:
@@ -21906,7 +21908,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-node-polyfills@npm:0.23.0":
+"vite-plugin-node-polyfills@npm:0.23.0, vite-plugin-node-polyfills@npm:^0.23.0":
   version: 0.23.0
   resolution: "vite-plugin-node-polyfills@npm:0.23.0"
   dependencies:

@@ -21,6 +21,7 @@ model Post {
   id        Int      @id @default(autoincrement())
   title     String
   body      String
+  comments  Comment[]
   createdAt DateTime @default(now())
 }
 
@@ -40,6 +41,16 @@ model User {
   salt                String
   resetToken          String?
   resetTokenExpiresAt DateTime?
+  roles               String   @default("moderator")
   createdAt           DateTime @default(now())
   updatedAt           DateTime @updatedAt
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  name      String
+  body      String
+  post      Post     @relation(fields: [postId], references: [id])
+  postId    Int
+  createdAt DateTime @default(now())
 }
