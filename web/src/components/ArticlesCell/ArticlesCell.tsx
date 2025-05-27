@@ -18,6 +18,9 @@ export const QUERY: TypedDocumentNode<ArticlesQuery, ArticlesQueryVariables> =
         title
         body
         createdAt
+        user {
+          name
+        }
       }
     }
   `
